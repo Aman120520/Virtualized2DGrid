@@ -25,3 +25,37 @@ Lazy loading more rows (100 at a time).
 Horizontal scroll can be triggered from anywhere in the row.
 
 Memoized cells and rows for performance.
+
+## ✏️ Changes Made
+
+1. 🔁 **Converted the entire 2D grid structure into modular components:**
+
+   - Extracted reusable components:
+     - `Row.tsx` to render each horizontal row.
+     - `ColumnCell.tsx` to render individual cells.
+     - Shared constants moved to `gridConstants.ts`.
+     - Styles moved to `globalStyles.ts`.
+
+2. 📂 **Restructured the project for better readability and maintainability:**
+   ├── App.tsx # Main grid setup (vertical FlatList)
+   ├── components/
+   │ ├── Row.tsx # Horizontal row component
+   │ └── ColumnCell.tsx # Single cell component
+   ├── constants/
+   │ └── gridConstants.ts # Grid size, cell dimensions
+   ├── styles/
+   │ └── globalStyles.ts # Common styles
+
+3. 📌 **Updated styles and logic to work with modularized architecture.**
+
+4. ✅ **Updated `README.md`** to include:
+
+- New folder structure
+- Component explanations
+- APK build instructions
+- Contribution-ready project setup
+
+5. 🔧 **Prepared project for GitHub submission:**
+
+- Initialized Git repo and pushed to GitHub
+- Linked screenshots folder and prepared metadata
